@@ -77,7 +77,7 @@ const shortcutsData = {
     name: "Figma",
     categories: [
       {
-        name: "FILE",
+        name: "File",
         commands: [
           { name: "new window", keys: ["cmd", "shift", "n"] },
           { name: "new file", keys: ["cmd", "n"] },
@@ -91,7 +91,7 @@ const shortcutsData = {
         ],
       },
       {
-        name: "EDIT",
+        name: "Edit",
         commands: [
           { name: "undo", keys: ["cmd", "z"] },
           { name: "redo", keys: ["cmd", "shift", "z"] },
@@ -109,7 +109,7 @@ const shortcutsData = {
         ],
       },
       {
-        name: "VIEW",
+        name: "View",
         commands: [
           { name: "zoom in", keys: ["+"] },
           { name: "zoom out", keys: ["-"] },
@@ -124,7 +124,7 @@ const shortcutsData = {
         ],
       },
       {
-        name: "TOOLS",
+        name: "Tools",
         commands: [
           { name: "move tool", keys: ["v"] },
           { name: "pen tool", keys: ["p"] },
@@ -137,7 +137,7 @@ const shortcutsData = {
         ],
       },
       {
-        name: "OBJECT",
+        name: "Object",
         commands: [
           { name: "group selection", keys: ["cmd", "g"] },
           { name: "frame selection", keys: ["cmd", "alt", "g"] },
@@ -159,7 +159,7 @@ const shortcutsData = {
         ],
       },
       {
-        name: "VECTOR",
+        name: "Vector",
         commands: [
           { name: "join selection", keys: ["cmd", "j"] },
           { name: "smooth join selection", keys: ["cmd", "shift", "j"] },
@@ -167,7 +167,7 @@ const shortcutsData = {
         ],
       },
       {
-        name: "TEXT",
+        name: "Text",
         commands: [
           { name: "bold", keys: ["cmd", "b"] },
           { name: "italic", keys: ["cmd", "i"] },
@@ -185,7 +185,7 @@ const shortcutsData = {
         ],
       },
       {
-        name: "ARRANGE",
+        name: "Arrange",
         commands: [
           { name: "align left", keys: ["alt", "a"] },
           { name: "align h. centers", keys: ["alt", "h"] },
