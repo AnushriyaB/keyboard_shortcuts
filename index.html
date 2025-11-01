@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Shortcuts - Interactive Learning</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Logo - Top Left Corner -->
+      <div class="logo-container">
+        <span class="logo">learnShortcuts</span>
+        <span class="logo-text">practice your shortcuts today</span>
+      </div>
+
+      <!-- App Selector - Top Right Corner -->
+      <div class="app-selector-top">
+        <span class="app-selector-label">SHORTCUTS FOR</span>
+        <div class="custom-select" id="customAppSelect">
+          <div class="select-trigger">
+            <img src="cursor-icon.svg" alt="Cursor" class="app-icon" />
+            <span class="app-name">Cursor</span>
+            <svg
+              class="dropdown-arrow"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+          <div class="select-options" id="selectOptions">
+            <div class="select-option" data-value="cursor">
+              <img src="cursor-icon.svg" alt="Cursor" class="app-icon" />
+              <span class="app-name">Cursor</span>
+            </div>
+            <div class="select-option" data-value="figma">
+              <img src="figma-icon.svg" alt="Figma" class="app-icon" />
+              <span class="app-name">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Bar - Keyboard Keys Style -->
+      <div class="progress-bar-container" id="progressContainer">
+        <div class="progress-header">
+          <span class="progress-title">PROGRESS</span>
+          <button
+            class="close-practice-btn"
+            id="closePracticeBtn"
+            title="Exit Practice Mode"
+          >
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <div class="progress-keys" id="progressKeys">
+          <!-- Mini keyboard keys will be dynamically generated for each shortcut -->
+        </div>
+        <span class="progress-text" id="progressText">0 / 0</span>
+        <button class="skip-btn" id="nextBtn">Skip</button>
+      </div>
+
+      <div class="main-wrapper">
+        <!-- Main Content - Keyboard View -->
+        <main class="keyboard-container">
+          <!-- Typed Text Display -->
+          <div class="typed-text-display" id="typedText"></div>
+
+          <!-- Practice Feedback -->
+          <div class="practice-feedback" id="practiceFeedback"></div>
+
+          <div class="keyboard-wrapper">
+            <!-- Mute Button Left - Next to Keyboard -->
+            <button
+              class="mute-btn mute-btn-left"
+              id="muteBtnLeft"
+              title="Mute/Unmute"
+            >
+              <i data-lucide="speaker"></i>
+            </button>
+
+            <div class="keyboard" id="keyboard" data-theme="default">
+              <!-- Keyboard keys will be dynamically generated -->
+            </div>
+
+            <!-- Mute Button Right - Next to Keyboard -->
+            <button
+              class="mute-btn mute-btn-right"
+              id="muteBtnRight"
+              title="Mute/Unmute"
+            >
+              <i data-lucide="speaker"></i>
+            </button>
+          </div>
+        </main>
+      </div>
+
+      <!-- Bottom Shortcuts Bar -->
+      <div class="shortcuts-bottom-bar" id="shortcutsBar">
+        <!-- Pull Handle -->
+        <button
+          class="shortcuts-handle"
+          id="shortcutsHandle"
+          aria-label="Expand shortcuts"
+        >
+          <i data-lucide="chevron-up"></i>
+        </button>
+
+        <div class="shortcuts-content" id="shortcutsBottomContent">
+          <!-- Shortcuts will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
