@@ -1,6 +1,6 @@
 # Keyboard Shortcut Learning Web App
 
-An interactive 3D keyboard shortcut visualization tool with a neo-futuristic design. Learn keyboard shortcuts by seeing them highlighted on a beautiful 3D keyboard.
+An interactive 3D keyboard shortcut visualization and practice tool with a neo-futuristic design. Learn keyboard shortcuts by seeing them highlighted on a beautiful 3D keyboard.
 
 ## Features
 
@@ -8,13 +8,13 @@ An interactive 3D keyboard shortcut visualization tool with a neo-futuristic des
 - **Interactive Shortcuts**: Click or hover over commands to see keys highlighted
 - **Collapsible Categories**: Organize shortcuts by category with expand/collapse all
 - **Neo-futuristic Design**: Sharp blues and grays with the Satoshi font
-- **Cursor Shortcuts**: Pre-loaded with comprehensive Cursor IDE shortcuts
+- **Cursor Shortcuts**: Pre-loaded with comprehensive Cursor IDE shortcuts and Figma shortcuts
 - **Smooth Animations**: Pulsing highlights and smooth transitions
 
 ## How to Use
 
-1. **Open the app**: Simply open `index.html` in your web browser
-2. **Select an app**: Use the dropdown to choose which app's shortcuts to view (currently Cursor)
+1. **Open the app**: Go to https://practice-shortcuts.vercel.app/ or open `index.html` in your web browser
+2. **Select an app**: Use the dropdown to choose which app's shortcuts to view (currently Cursor or Figma)
 3. **Browse shortcuts**: Click category headers to expand/collapse them
 4. **See highlights**: 
    - **Hover** over a command to temporarily highlight the keys
