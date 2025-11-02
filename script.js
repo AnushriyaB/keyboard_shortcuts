@@ -200,6 +200,67 @@ const shortcutsData = {
       },
     ],
   },
+  linear: {
+    name: "Linear",
+    categories: [
+      {
+        name: "General",
+        commands: [
+          { name: "Open command menu", keys: ["cmd", "k"] },
+          { name: "Save or submit", keys: ["cmd", "enter"] },
+          { name: "Back", keys: ["esc"] },
+          { name: "Peek into issue", keys: ["space"] },
+        ],
+      },
+      {
+        name: "Navigation",
+        commands: [
+          { name: "Go to inbox", keys: ["cmd", "i"] },
+          { name: "Go to issues", keys: ["cmd", "k"] },
+          { name: "Go to search", keys: ["cmd", "f"] },
+          { name: "Go to team", keys: ["cmd", "t"] },
+          { name: "Go to projects", keys: ["cmd", "p"] },
+          { name: "Go to cycles", keys: ["cmd", "c"] },
+          { name: "Go to settings", keys: ["cmd", ","] },
+          { name: "Next issue", keys: ["j"] },
+          { name: "Previous issue", keys: ["k"] },
+        ],
+      },
+      {
+        name: "Issue Actions",
+        commands: [
+          { name: "Create issue", keys: ["c"] },
+          { name: "Edit issue", keys: ["e"] },
+          { name: "Assign to me", keys: ["i"] },
+          { name: "Set due date", keys: ["d"] },
+          { name: "Set priority", keys: ["p"] },
+          { name: "Set status", keys: ["s"] },
+          { name: "Add label", keys: ["l"] },
+          { name: "Add comment", keys: ["cmd", "enter"] },
+          { name: "Archive issue", keys: ["cmd", "shift", "a"] },
+          { name: "Delete issue", keys: ["cmd", "backspace"] },
+        ],
+      },
+      {
+        name: "Filters & Views",
+        commands: [
+          { name: "Filter issues", keys: ["cmd", "f"] },
+          { name: "Clear filters", keys: ["cmd", "shift", "f"] },
+          { name: "Toggle view", keys: ["v"] },
+          { name: "Group by", keys: ["g"] },
+          { name: "Sort by", keys: ["o"] },
+        ],
+      },
+      {
+        name: "Comments & Reactions",
+        commands: [
+          { name: "Add comment", keys: ["cmd", "enter"] },
+          { name: "Edit comment", keys: ["e"] },
+          { name: "Add reaction", keys: ["cmd", "e"] },
+        ],
+      },
+    ],
+  },
 };
 
 // Apple Keyboard Layout
