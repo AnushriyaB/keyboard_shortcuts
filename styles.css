@@ -620,6 +620,21 @@ body.theme-mechanical .app-selector-top select:hover {
 
 .command-name {
   flex: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mouse-icon {
+  display: inline-flex;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+}
+
+.command-name:hover .mouse-icon {
+  opacity: 1;
 }
 
 .shortcut-keys {
@@ -860,6 +875,17 @@ body.theme-mechanical .shortcuts-content .category-title {
   color: #001f3f;
 }
 
+.shortcuts-content .mouse-badge {
+  background: #f0f7ff;
+  border-color: #001f3f;
+}
+
+.shortcuts-content .mouse-badge i {
+  width: 14px;
+  height: 14px;
+  color: #001f3f;
+}
+
 /* Selected state for practice mode */
 .command-item.selected {
   background: var(--primary-blue);
@@ -1063,6 +1089,79 @@ body.theme-mechanical .mute-btn {
   pointer-events: none;
   transition: opacity 0.3s ease;
   z-index: 100;
+}
+
+/* Tab Change Toast - Bottom Right */
+.tab-change-toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  background: rgba(255, 149, 0, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 149, 0, 0.3);
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 8px 24px rgba(255, 149, 0, 0.4);
+  opacity: 0;
+  transform: translateX(20px);
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1000;
+  max-width: 360px;
+}
+
+.tab-change-toast.show {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.toast-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.toast-content i {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  stroke-width: 2.5;
+}
+
+.toast-content span {
+  line-height: 1.5;
+}
+
+.toast-progress {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.progress-ring {
+  width: 24px;
+  height: 24px;
+  transform: rotate(-90deg);
+}
+
+.progress-ring-circle {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.9);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 62.83; /* 2 * π * 10 (radius) */
+  stroke-dashoffset: 62.83;
+  transition: stroke-dashoffset 0.1s linear;
 }
 
 .practice-feedback.show {

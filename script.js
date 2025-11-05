@@ -261,6 +261,179 @@ const shortcutsData = {
       },
     ],
   },
+  notion: {
+    name: "Notion",
+    categories: [
+      {
+        name: "Most Popular",
+        commands: [
+          { name: "Search inside page", keys: ["cmd", "f"] },
+          { name: "Search or jump to page", keys: ["cmd", "p"] },
+          { name: "Search or jump to page (alt)", keys: ["cmd", "k"] },
+          { name: "Copy page URL", keys: ["cmd", "l"] },
+          { name: "Go back", keys: ["cmd", "["] },
+          { name: "Go forward", keys: ["cmd", "]"] },
+          { name: "Previous database page", keys: ["ctrl", "shift", "k"] },
+          { name: "Next database page", keys: ["ctrl", "shift", "j"] },
+          { name: "Toggle dark/light mode", keys: ["cmd", "shift", "l"] },
+        ],
+      },
+      {
+        name: "Desktop",
+        commands: [
+          { name: "Create new page", keys: ["cmd", "n"] },
+          { name: "Open new window", keys: ["cmd", "shift", "n"] },
+          { name: "Open page as new window", keys: ["alt", "shift", "click"] },
+          { name: "Open link as new tab", keys: ["cmd", "click"] },
+          { name: "Create new tab", keys: ["cmd", "t"] },
+        ],
+      },
+      {
+        name: "Markdown Style",
+        commands: [
+          { name: "Bold", keys: ["**", "**"] },
+          { name: "Italic", keys: ["*", "*"] },
+          { name: "Inline code", keys: ["`", "`"] },
+          { name: "Strikethrough", keys: ["~", "~"] },
+          { name: "Bulleted list", keys: ["*", "space"] },
+          { name: "Bulleted list (alt)", keys: ["-", "space"] },
+          { name: "Bulleted list (alt 2)", keys: ["+", "space"] },
+          { name: "To-do checkbox", keys: ["[]", "space"] },
+          { name: "Numbered list", keys: ["1.", "space"] },
+          { name: "Numbered list (lowercase)", keys: ["a.", "space"] },
+          { name: "Numbered list (roman)", keys: ["i.", "space"] },
+          { name: "H1 heading", keys: ["#", "space"] },
+          { name: "H2 heading", keys: ["##", "space"] },
+          { name: "H3 heading", keys: ["###", "space"] },
+          { name: "Toggle list", keys: [">", "space"] },
+          { name: "Quote block", keys: ['"', "space"] },
+        ],
+      },
+      {
+        name: "Create & Style",
+        commands: [
+          { name: "Insert line", keys: ["enter"] },
+          { name: "Line break", keys: ["shift", "enter"] },
+          { name: "Create comment", keys: ["cmd", "shift", "m"] },
+          { name: "Create divider", keys: ["---"] },
+          { name: "Bold text", keys: ["cmd", "b"] },
+          { name: "Italicize text", keys: ["cmd", "i"] },
+          { name: "Underline text", keys: ["cmd", "u"] },
+          { name: "Strikethrough", keys: ["cmd", "shift", "s"] },
+          { name: "Add link", keys: ["cmd", "k"] },
+          { name: "Inline code", keys: ["cmd", "e"] },
+          { name: "Indent/nest", keys: ["tab"] },
+          { name: "Un-nest", keys: ["shift", "tab"] },
+          { name: "Turn into block", keys: ["/turn"] },
+          { name: "Change color", keys: ["/color"] },
+          { name: "Create text", keys: ["cmd", "alt", "0"] },
+          { name: "Create H1", keys: ["cmd", "alt", "1"] },
+          { name: "Create H2", keys: ["cmd", "alt", "2"] },
+          { name: "Create H3", keys: ["cmd", "alt", "3"] },
+          { name: "Create to-do", keys: ["cmd", "alt", "4"] },
+          { name: "Create bulleted list", keys: ["cmd", "alt", "5"] },
+          { name: "Create numbered list", keys: ["cmd", "alt", "6"] },
+          { name: "Create toggle list", keys: ["cmd", "alt", "7"] },
+          { name: "Create code block", keys: ["cmd", "alt", "8"] },
+          { name: "Create new page", keys: ["cmd", "alt", "9"] },
+          { name: "Zoom in", keys: ["cmd", "+"] },
+          { name: "Zoom out", keys: ["cmd", "-"] },
+          { name: "Go up one level", keys: ["cmd", "shift", "u"] },
+          { name: "Fill cells right (table)", keys: ["cmd", "r"] },
+          { name: "Fill cells down (table)", keys: ["cmd", "d"] },
+        ],
+      },
+      {
+        name: "Edit & Move Blocks",
+        commands: [
+          { name: "Select current block", keys: ["esc"] },
+          { name: "Clear selection", keys: ["esc"] },
+          { name: "Select block", keys: ["cmd", "a"] },
+          { name: "Open image fullscreen", keys: ["space"] },
+          { name: "Exit fullscreen", keys: ["space"] },
+          { name: "Navigate blocks", keys: ["up"] },
+          { name: "Navigate blocks", keys: ["down"] },
+          { name: "Navigate blocks", keys: ["left"] },
+          { name: "Navigate blocks", keys: ["right"] },
+          { name: "Expand selection up", keys: ["shift", "up"] },
+          { name: "Expand selection down", keys: ["shift", "down"] },
+          { name: "Select entire block", keys: ["cmd", "shift", "click"] },
+          { name: "Select range of blocks", keys: ["shift", "click"] },
+          { name: "Delete selected blocks", keys: ["backspace"] },
+          { name: "Delete selected blocks (alt)", keys: ["delete"] },
+          { name: "Duplicate blocks", keys: ["cmd", "d"] },
+          { name: "Edit selected block", keys: ["enter"] },
+          { name: "Edit or change blocks", keys: ["cmd", "/"] },
+        ],
+      },
+      {
+        name: "@ Commands",
+        commands: [
+          { name: "Mention person", keys: ["@"] },
+          { name: "Link to page", keys: ["@"] },
+          { name: "Link to date", keys: ["@"] },
+          { name: "Add reminder", keys: ["@"] },
+        ],
+      },
+      {
+        name: "[[ Commands",
+        commands: [{ name: "Link to page", keys: ["[[", "]]"] }],
+      },
+      {
+        name: "+ Commands",
+        commands: [{ name: "Add block", keys: ["+"] }],
+      },
+      {
+        name: "Slash Commands - Basic",
+        commands: [
+          { name: "Text", keys: ["/text"] },
+          { name: "Page", keys: ["/page"] },
+          { name: "To-do", keys: ["/todo"] },
+          { name: "Heading 1", keys: ["/h1"] },
+          { name: "Heading 2", keys: ["/h2"] },
+          { name: "Heading 3", keys: ["/h3"] },
+          { name: "Bulleted list", keys: ["/bullet"] },
+          { name: "Numbered list", keys: ["/number"] },
+          { name: "Toggle list", keys: ["/toggle"] },
+          { name: "Quote", keys: ["/quote"] },
+          { name: "Divider", keys: ["/divider"] },
+        ],
+      },
+      {
+        name: "Slash Commands - Inline",
+        commands: [
+          { name: "Link", keys: ["/link"] },
+          { name: "Mention", keys: ["/mention"] },
+          { name: "Equation", keys: ["/equation"] },
+          { name: "Date", keys: ["/date"] },
+          { name: "Reminder", keys: ["/reminder"] },
+        ],
+      },
+      {
+        name: "Slash Commands - Media",
+        commands: [
+          { name: "Image", keys: ["/image"] },
+          { name: "Video", keys: ["/video"] },
+          { name: "Audio", keys: ["/audio"] },
+          { name: "File", keys: ["/file"] },
+          { name: "Code", keys: ["/code"] },
+          { name: "Embed", keys: ["/embed"] },
+        ],
+      },
+      {
+        name: "Slash Commands - Advanced",
+        commands: [
+          { name: "Table", keys: ["/table"] },
+          { name: "Board", keys: ["/board"] },
+          { name: "Gallery", keys: ["/gallery"] },
+          { name: "List", keys: ["/list"] },
+          { name: "Calendar", keys: ["/calendar"] },
+          { name: "Timeline", keys: ["/timeline"] },
+          { name: "Template", keys: ["/template"] },
+        ],
+      },
+    ],
+  },
 };
 
 // Apple Keyboard Layout
@@ -372,6 +545,9 @@ let practiceMode = {
   skippedCount: 0,
 };
 
+// Track if we were in practice mode before tab change
+let wasInPracticeMode = false;
+
 // Audio Context for sound generation
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
@@ -478,6 +654,27 @@ let isTyping = false;
 let isMuted = false;
 let lastTextLength = 0;
 
+// Global prevention of cmd+w when in practice mode
+// This runs at the highest level to catch the event first
+window.addEventListener(
+  "keydown",
+  (e) => {
+    // Check if in practice mode and cmd+w is pressed
+    if (
+      practiceMode.selectedShortcut &&
+      (e.metaKey || e.ctrlKey) &&
+      (e.key === "w" || e.key === "W")
+    ) {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+      console.log("🛑 Prevented cmd+w from closing tab");
+      return false;
+    }
+  },
+  true
+); // Capture phase
+
 // Initialize the app
 document.addEventListener("DOMContentLoaded", () => {
   console.log("=== APP INITIALIZING ===");
@@ -485,6 +682,11 @@ document.addEventListener("DOMContentLoaded", () => {
   generateKeyboard(); // This now includes typing functionality
   loadShortcuts("cursor");
   setupEventListeners();
+
+  // Initialize Lucide icons for browser warning
+  setTimeout(() => {
+    lucide.createIcons();
+  }, 100);
   // setupThemeSwitcher(); // Archived - using default theme only
 
   // Set initial theme
@@ -502,14 +704,34 @@ document.addEventListener("DOMContentLoaded", () => {
   // Setup physical keyboard typing
   setupPhysicalKeyboardTyping();
 
+  // Prevent tab closing with cmd+w during practice mode
+  window.addEventListener(
+    "beforeunload",
+    (e) => {
+      if (practiceMode.selectedShortcut) {
+        // Prevent closing the tab/window during practice
+        e.preventDefault();
+        e.returnValue = ""; // Required for some browsers
+        return "";
+      }
+    },
+    { capture: true }
+  );
+
   // Setup cleanup listeners for focus/blur and visibility change
   window.addEventListener("blur", () => {
     if (practiceMode.selectedShortcut) {
+      wasInPracticeMode = true;
       clearAllPressedKeys();
     }
   });
 
   window.addEventListener("focus", () => {
+    // If we were in practice mode and tab was changed, show toast
+    if (wasInPracticeMode && practiceMode.selectedShortcut) {
+      showTabChangeToast();
+      wasInPracticeMode = false;
+    }
     if (practiceMode.selectedShortcut) {
       clearAllPressedKeys();
     }
@@ -517,7 +739,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("visibilitychange", () => {
     if (document.hidden && practiceMode.selectedShortcut) {
+      wasInPracticeMode = true;
       clearAllPressedKeys();
+    } else if (
+      !document.hidden &&
+      wasInPracticeMode &&
+      practiceMode.selectedShortcut
+    ) {
+      // Tab became visible again and we were in practice mode
+      showTabChangeToast();
+      wasInPracticeMode = false;
     }
   });
 
@@ -759,6 +990,12 @@ function getKeyIcon(keyName) {
 
 // Load shortcuts for selected app
 function loadShortcuts(appName) {
+  // Exit practice mode if active when switching apps
+  if (practiceMode.active || practiceMode.selectedShortcut) {
+    console.log("🔄 App changed - exiting practice mode");
+    deselectShortcut();
+  }
+
   const shortcutsContent = document.getElementById("shortcutsBottomContent");
   shortcutsContent.innerHTML = "";
 
@@ -772,13 +1009,23 @@ function loadShortcuts(appName) {
     const commandsHTML = category.commands
       .map((command) => {
         const keyBadges = command.keys
-          .map((key) => `<span class="key-badge">${formatKeyLabel(key)}</span>`)
+          .map((key) => {
+            if (key === "click") {
+              return `<span class="key-badge mouse-badge"><i data-lucide="mouse-pointer-2"></i></span>`;
+            }
+            return `<span class="key-badge">${formatKeyLabel(key)}</span>`;
+          })
           .join("");
+
+        const hasClick = command.keys.includes("click");
+        const mouseIcon = hasClick
+          ? '<i data-lucide="mouse-pointer-2" class="mouse-icon"></i>'
+          : "";
 
         return `<div class="command-item" data-keys='${JSON.stringify(
           command.keys
         )}' data-command="${command.name}">
-              <span class="command-name">${command.name}:</span>
+              <span class="command-name">${command.name}:${mouseIcon}</span>
               ${keyBadges}
           </div>`;
       })
@@ -794,8 +1041,13 @@ function loadShortcuts(appName) {
 
   shortcutsContent.innerHTML = htmlContent;
 
-  // Reinitialize Lucide icons
+  // Reinitialize Lucide icons (including toast icon)
   lucide.createIcons();
+
+  // Initialize toast icon separately
+  setTimeout(() => {
+    lucide.createIcons();
+  }, 50);
 
   // Add event listeners to commands
   setupCategoryListeners();
@@ -865,11 +1117,15 @@ function setupCategoryListeners() {
     ".shortcuts-content .command-item"
   );
 
-  // Build practice mode shortcuts array
+  // Build practice mode shortcuts array (exclude shortcuts with "click")
   practiceMode.allShortcuts = [];
 
   commandItems.forEach((item, index) => {
     const keys = JSON.parse(item.dataset.keys);
+    // Skip shortcuts that include "click" - these require mouse interaction
+    if (keys.includes("click")) {
+      return;
+    }
     practiceMode.allShortcuts.push({
       element: item,
       keys: keys,
@@ -901,6 +1157,11 @@ function setupCategoryListeners() {
         ?.classList.remove("has-selection");
 
       if (!wasSelected) {
+        const keys = JSON.parse(item.dataset.keys);
+        // Don't allow practice mode for shortcuts with "click"
+        if (keys.includes("click")) {
+          return;
+        }
         // Select this shortcut
         item.classList.add("selected");
         document
@@ -927,14 +1188,89 @@ function clearAllPressedKeys() {
   console.log("🧹 Cleared all pressed keys");
 }
 
+// Check if a shortcut might trigger browser actions
+function isDangerousShortcut(keys) {
+  const dangerousPatterns = [
+    // Tab/window management
+    { keys: ["cmd", "t"], desc: "New tab" },
+    { keys: ["cmd", "w"], desc: "Close tab" },
+    { keys: ["cmd", "shift", "w"], desc: "Close window" },
+    { keys: ["cmd", "n"], desc: "New window" },
+    { keys: ["cmd", "shift", "n"], desc: "New window" },
+    { keys: ["cmd", "q"], desc: "Quit application" },
+    // Navigation
+    { keys: ["cmd", "l"], desc: "Address bar" },
+    { keys: ["cmd", "r"], desc: "Reload" },
+    { keys: ["cmd", "shift", "r"], desc: "Hard reload" },
+    // History
+    { keys: ["cmd", "["], desc: "Back" },
+    { keys: ["cmd", "]"], desc: "Forward" },
+  ];
+
+  const normalizedKeys = keys.map((k) => k.toLowerCase()).sort();
+
+  return dangerousPatterns.some((pattern) => {
+    const patternKeys = pattern.keys.map((k) => k.toLowerCase()).sort();
+    return arraysEqual(normalizedKeys, patternKeys);
+  });
+}
+
+// Store progress interval to allow cleanup
+let toastProgressInterval = null;
+
+// Show tab change toast with circular progress
+function showTabChangeToast() {
+  const toast = document.getElementById("tabChangeToast");
+  if (!toast) return;
+
+  const progressCircle = toast.querySelector(".progress-ring-circle");
+  if (!progressCircle) return;
+
+  // Clear any existing interval
+  if (toastProgressInterval) {
+    clearInterval(toastProgressInterval);
+    toastProgressInterval = null;
+  }
+
+  // Show toast
+  toast.classList.add("show");
+
+  // Reset progress circle
+  const circumference = 2 * Math.PI * 10; // radius is 10
+  progressCircle.style.strokeDasharray = circumference;
+  progressCircle.style.strokeDashoffset = circumference;
+
+  // Animate progress circle over 10 seconds
+  let progress = 0;
+  const duration = 10000; // 10 seconds
+  const interval = 16; // ~60fps
+  const increment = (interval / duration) * circumference;
+
+  toastProgressInterval = setInterval(() => {
+    progress += increment;
+    if (progress >= circumference) {
+      progress = circumference;
+      clearInterval(toastProgressInterval);
+      toastProgressInterval = null;
+      // Hide toast after animation completes
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 300);
+    }
+    progressCircle.style.strokeDashoffset = circumference - progress;
+  }, interval);
+}
+
 // Select a shortcut for practice
 function selectShortcutForPractice(element, index) {
   // Clear any residual pressed keys first
   clearAllPressedKeys();
 
+  const keys = JSON.parse(element.dataset.keys);
+
   practiceMode.selectedShortcut = {
     element: element,
-    keys: JSON.parse(element.dataset.keys),
+    keys: keys,
     command: element.dataset.command,
   };
   practiceMode.currentShortcutIndex = index;
@@ -960,11 +1296,25 @@ function deselectShortcut() {
   practiceMode.skippedCount = 0;
   practiceMode.currentKeys.clear();
 
+  // Clear all pressed keys visually
+  clearAllPressedKeys();
+
   // Clear highlights
   clearHighlights();
 
+  // Clear selected command items
+  document
+    .querySelectorAll(".command-item")
+    .forEach((i) => i.classList.remove("selected"));
+  document
+    .querySelector(".shortcuts-content")
+    ?.classList.remove("has-selection");
+
   // Hide progress bar
   document.getElementById("progressContainer")?.classList.remove("active");
+
+  // Reset tab change tracking
+  wasInPracticeMode = false;
 }
 
 // Shape and color combinations for visual distinction
@@ -1411,6 +1761,30 @@ function setupShortcutsHandle() {
 function normalizePhysicalKey(e) {
   // Only prevent browser shortcuts (modifier + key combinations) during practice mode
   if (practiceMode.selectedShortcut) {
+    // Check if current key combination is dangerous (triple protection)
+    const currentKeys = [];
+    if (e.metaKey || e.ctrlKey) currentKeys.push("cmd");
+    if (e.shiftKey) currentKeys.push("shift");
+    if (e.altKey) currentKeys.push("alt");
+
+    const mainKey = e.key.toLowerCase();
+    if (mainKey && !["meta", "control", "shift", "alt"].includes(mainKey)) {
+      currentKeys.push(mainKey);
+    }
+
+    if (isDangerousShortcut(currentKeys)) {
+      console.log("🛑 normalizePhysicalKey: BLOCKING dangerous shortcut", {
+        keys: currentKeys,
+        raw: e.key,
+        code: e.code,
+      });
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+      e.cancelBubble = true;
+      return mainKey; // Still return the key for tracking, but prevent the action
+    }
+
     // Check if it's a shortcut combination (modifier + another key)
     const hasModifier = e.metaKey || e.ctrlKey || e.altKey;
     const isModifierKey = ["Meta", "Control", "Alt", "Command"].includes(e.key);
@@ -1814,10 +2188,70 @@ function completePracticeSession() {
 
 // Setup physical keyboard listener
 function setupPracticeKeyboardListener() {
+  // Add a HIGHEST PRIORITY window-level listener for ALL dangerous shortcuts
+  // Use both key and code for maximum compatibility
+  window.addEventListener(
+    "keydown",
+    (e) => {
+      if (!practiceMode.selectedShortcut) return;
+
+      // Check if current key combination is dangerous
+      const currentKeys = [];
+      if (e.metaKey || e.ctrlKey) currentKeys.push("cmd");
+      if (e.shiftKey) currentKeys.push("shift");
+      if (e.altKey) currentKeys.push("alt");
+
+      // Add the main key
+      const mainKey = e.key.toLowerCase();
+      if (mainKey && !["meta", "control", "shift", "alt"].includes(mainKey)) {
+        currentKeys.push(mainKey);
+      }
+
+      // Check if this combination is dangerous
+      if (isDangerousShortcut(currentKeys)) {
+        console.log("🛑 Window listener: BLOCKING dangerous shortcut", {
+          keys: currentKeys,
+          raw: e.key,
+          code: e.code,
+        });
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        e.cancelBubble = true;
+        return false;
+      }
+    },
+    true // Capture phase - runs FIRST
+  );
+
   document.addEventListener(
     "keydown",
     (e) => {
       if (!practiceMode.selectedShortcut) return;
+
+      // Check if current key combination is dangerous (double protection)
+      const currentKeys = [];
+      if (e.metaKey || e.ctrlKey) currentKeys.push("cmd");
+      if (e.shiftKey) currentKeys.push("shift");
+      if (e.altKey) currentKeys.push("alt");
+
+      const mainKey = e.key.toLowerCase();
+      if (mainKey && !["meta", "control", "shift", "alt"].includes(mainKey)) {
+        currentKeys.push(mainKey);
+      }
+
+      if (isDangerousShortcut(currentKeys)) {
+        console.log("🛑 Document listener: BLOCKING dangerous shortcut", {
+          keys: currentKeys,
+          raw: e.key,
+          code: e.code,
+        });
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        e.cancelBubble = true;
+        return false;
+      }
 
       // Prevent default browser shortcuts during practice mode
       e.preventDefault();
@@ -1867,6 +2301,14 @@ function setupPracticeKeyboardListener() {
     "keyup",
     (e) => {
       if (!practiceMode.selectedShortcut) return;
+
+      // Specifically prevent cmd+w from closing the tab
+      if ((e.metaKey || e.ctrlKey) && (e.key === "w" || e.key === "W")) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        return false;
+      }
 
       // Prevent default browser shortcuts during practice mode
       e.preventDefault();
